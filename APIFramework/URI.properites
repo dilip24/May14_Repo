@@ -1,6 +1,6 @@
-QA_URI: http://localhost:3000/APITesting
-Employee_URI: https://dummy.restapiexample.com/api/v1/create
-EmployeeGet_URI: https://dummy.restapiexample.com/api/v1/employee/1
-EmployeeGetAll_URI: https://dummy.restapiexample.com/api/v1/employees
-EmployeeUpdate_URI: https://dummy.restapiexample.com/public/api/v1/update/5
+QA_URI:http://localhost:3000/APITesting
+Employee_URI:https://dummy.restapiexample.com/api/v1/create
+EmployeeGet_URI:https://dummy.restapiexample.com/api/v1/employee/1
+EmployeeGetAll_URI:https://dummy.restapiexample.com/api/v1/employees
+EmployeeUpdate_URI:https://dummy.restapiexample.com/public/api/v1/update/5
 DeleteEmployee_URI:https://dummy.restapiexample.com/public/api/v1/delete/6

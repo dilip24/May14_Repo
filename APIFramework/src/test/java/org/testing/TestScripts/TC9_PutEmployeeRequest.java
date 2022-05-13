@@ -19,7 +19,7 @@ public class TC9_PutEmployeeRequest {
 		
 		
 		HTTPMethods http=new HTTPMethods(pr);
-		Response response=http.PutRequest1(jsonBody,"EmployeeUpdate_URI");
+		Response response=http.PutEmpRequest(jsonBody,"EmployeeUpdate_URI");
 		
 		System.out.println("******Test Case 9********");
 		System.out.println("Status Code is "+response.statusCode());
@@ -27,6 +27,7 @@ public class TC9_PutEmployeeRequest {
 		System.out.println(response.asString());
 		
 		ResponseValidate.statusCodeValidate(response, 200);
+		ResponseValidate.DataValidate(response, "Tiger Nixon", "employee_name");
 		
 	}
 }

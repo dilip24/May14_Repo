@@ -1,7 +1,6 @@
 {
-"firstname":"{{firstname}}",
-"lastname":"Gupta",
-"designation":"Analyst",
+"firstname":"Ramesh",
+"lastname":"Kumar",
+"designation":"Business Analyst",
 "id":"{{id}}"
-
 }

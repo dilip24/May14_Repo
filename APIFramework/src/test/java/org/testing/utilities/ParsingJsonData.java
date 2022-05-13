@@ -14,5 +14,4 @@ public class ParsingJsonData
 			System.out.println(j.get(keyname));
 		}
 	}
-
 }

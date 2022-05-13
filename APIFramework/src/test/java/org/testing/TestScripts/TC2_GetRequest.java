@@ -26,7 +26,7 @@ public class TC2_GetRequest
 		
 	
 		ResponseValidate.statusCodeValidate(response, 200);
-		ResponseValidate.DataValidate(response, "Analyst", "designation");
+		ResponseValidate.DataValidate(response, "Business Analyst", "designation");
 	}
 
 }

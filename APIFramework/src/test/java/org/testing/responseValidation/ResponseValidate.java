@@ -10,7 +10,7 @@ public class ResponseValidate
 	public static void statusCodeValidate(Response res,int expectedStatusCode)
 	{
 		int actualStatusCode=res.statusCode();
-		if (actualStatusCode==actualStatusCode)
+		if (actualStatusCode==expectedStatusCode)
 		{
 			System.out.println("Status code is matching");
 		}
@@ -20,10 +20,10 @@ public class ResponseValidate
 		}
 	}
 	
-	public static void DataValidate(Response res,String expectedData,String jsonPath)
+	public static void DataValidate(Response res,String expectedData,String jsonPaath)
 	{
 		System.out.println("Expected data is "+expectedData);
-		String actualData=ParsingJsonUsingJsonPath.parseJsonPath(res, jsonPath);
+		String actualData=ParsingJsonUsingJsonPath.parseJsonPath(res, jsonPaath);
 		System.out.println("Actual data is "+actualData);
 		
 		if(expectedData.equals(actualData))

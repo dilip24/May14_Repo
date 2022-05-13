@@ -22,11 +22,10 @@ public class TC6_PostRequestEmployee
 		Properties pr=LoadFile.loadProperties("../APIFramework/URI.properites");
 		String jsonBody=LoadJsonFile.jsonData("../APIFramework/src/test/java/org/testing/resources/employeepayload.json");
 		
-		
 		HTTPMethods http=new HTTPMethods(pr);
 		Response response=http.PostRequest(jsonBody,"Employee_URI");
 		
-		System.out.println("******Test Case 6********");
+		System.out.println("******Test Case6********");
 		System.out.println("Status Code is "+response.statusCode());
 		System.out.println("Response data is ");
 		System.out.println(response.asString());

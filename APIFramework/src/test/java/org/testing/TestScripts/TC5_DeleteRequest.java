@@ -19,7 +19,7 @@ public class TC5_DeleteRequest
 		HTTPMethods http=new HTTPMethods(pr);
 		Response response=http.DeleteRequest("QA_URI",TC1_PostRequest.respIdValue);
 		
-		System.out.println("********Test Case5********");
+		System.out.println("********Test Case5*********");
 		System.out.println("Status code is "+response.statusCode());
 		System.out.println("response data is");
 		System.out.println(response.asString());

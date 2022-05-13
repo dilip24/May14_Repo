@@ -29,6 +29,7 @@ public class TC4_PutRequest
 		System.out.println(response.asString());
 		
 		ResponseValidate.statusCodeValidate(response, 200);
+		ResponseValidate.DataValidate(response, "Senior Analyst", "designation");
 	}
 
 }

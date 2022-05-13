@@ -10,13 +10,14 @@ import org.testng.annotations.Test;
 
 import io.restassured.response.Response;
 
-public class TC10_DeleteEmployeeRequest {
+public class TC10_DeleteEmployeeRequest 
+{
 	@Test
 	public  void testcase10() throws IOException
 	{
 		Properties pr=LoadFile.loadProperties("../APIFramework/URI.properites");
 		HTTPMethods http=new HTTPMethods(pr);
-		Response response=http.DeleteRequest1("DeleteEmployee_URI");
+		Response response=http.DeleteEmpRequest("DeleteEmployee_URI");
 		
 		System.out.println("********Test Case10********");
 		System.out.println("Status code is "+response.statusCode());

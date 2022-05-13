@@ -3,7 +3,8 @@ package org.testing.utilities;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-public class ParsingJsonUsingOrgJson {
+public class ParsingJsonUsingOrgJson 
+{
 	public static String parseJson(String responseData,String keyname)
 	{
 		JSONObject js=new JSONObject(responseData);
@@ -17,9 +18,7 @@ public class ParsingJsonUsingOrgJson {
 		{
 			JSONObject js1=js.getJSONObject(i);
 		System.out.println(js1.get(keyname));
-		}
-			
-				
+		}				
 	}
 
 }

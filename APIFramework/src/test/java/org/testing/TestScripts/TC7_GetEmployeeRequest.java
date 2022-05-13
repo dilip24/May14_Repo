@@ -18,7 +18,7 @@ public class TC7_GetEmployeeRequest
 	{
 		Properties pr=LoadFile.loadProperties("../APIFramework/URI.properites");
 		HTTPMethods http=new HTTPMethods(pr);
-		Response response=http.getAllRequest("EmployeeGet_URI");
+		Response response=http.getEmpRequest("EmployeeGet_URI");
 		
 		System.out.println("********Test Case7********");
 		System.out.println("Status code is "+response.statusCode());

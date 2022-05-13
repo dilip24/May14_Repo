@@ -9,7 +9,8 @@ import static io.restassured.RestAssured.*;
 
 //fetch of URI Values
 //To fetch URI Values require properties object
-public class HTTPMethods {
+public class HTTPMethods 
+{
 	Properties pr;
 	public HTTPMethods(Properties pr)
 	{
@@ -42,6 +43,19 @@ public class HTTPMethods {
 		
 		return res;
 	}
+	
+	public Response getEmpRequest(String uriKey)
+	{
+		
+		Response res=
+		given()
+		.contentType(ContentType.JSON)
+		.when()
+		.get(pr.getProperty(uriKey));
+		
+		
+		return res;
+	}
 
 	public Response getAllRequest(String uriKey)
 	{
@@ -68,7 +82,7 @@ public class HTTPMethods {
 		return res;
 	}
 	
-	public Response PutRequest1(String JSONRequestBody,String uriKey)
+	public Response PutEmpRequest(String JSONRequestBody,String uriKey)
 	{
 		
 		Response res=
@@ -96,7 +110,7 @@ public class HTTPMethods {
 		return res;
 	}
 	
-	public Response DeleteRequest1(String uriKey)
+	public Response DeleteEmpRequest(String uriKey)
 	{
 		
 		Response res=
@@ -107,6 +121,6 @@ public class HTTPMethods {
 		
 		
 		return res;
-	}
-		}
+	}		
+}
 
