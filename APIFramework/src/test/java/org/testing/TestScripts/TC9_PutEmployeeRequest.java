@@ -27,7 +27,7 @@ public class TC9_PutEmployeeRequest {
 		System.out.println(response.asString());
 		
 		ResponseValidate.statusCodeValidate(response, 200);
-		ResponseValidate.DataValidate(response, "Tiger Nixon", "employee_name");
+		ResponseValidate.DataValidate(response, "Rhona Kelly", "employee_name");
 		
 	}
 }

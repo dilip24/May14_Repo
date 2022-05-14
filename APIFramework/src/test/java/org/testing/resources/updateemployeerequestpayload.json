@@ -1,5 +1,7 @@
 {
-"name":"Vishal",
-"salary":"42000",
-"age":"23"
-}
+            "id": 4,
+            "employee_name": "Rhona Kelly",
+            "employee_salary": 433060,
+            "employee_age": 22,
+            "profile_image": ""
+        }
