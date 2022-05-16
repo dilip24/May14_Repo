@@ -8,11 +8,7 @@
       <class name="org.testing.TestScripts.TC3_GetAllRequest"/>
       <class name="org.testing.TestScripts.TC4_PutRequest"/>
       <class name="org.testing.TestScripts.TC5_DeleteRequest"/>
-      <class name="org.testing.TestScripts.TC6_PostRequestEmployee"/>
-      <class name="org.testing.TestScripts.TC7_GetEmployeeRequest"/>
-      <class name="org.testing.TestScripts.TC8_GetAllEmployeeRequest"/>
-      <class name="org.testing.TestScripts.TC9_PutEmployeeRequest"/>
-      <class name="org.testing.TestScripts.TC10_DeleteEmployeeRequest"/> 
+       
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

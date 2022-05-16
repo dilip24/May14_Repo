@@ -3,6 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="org.testing.TestScripts.TC9_PutEmployeeRequest">
+        <methods>
+          <include name="testcase9"/>
+        </methods>
+      </class> <!-- org.testing.TestScripts.TC9_PutEmployeeRequest -->
       <class name="org.testing.TestScripts.TC8_GetAllEmployeeRequest">
         <methods>
           <include name="testcase8"/>
