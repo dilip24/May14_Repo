@@ -29,7 +29,7 @@ public class TC3_GetAllRequest
 		
 		
 		ResponseValidate.statusCodeValidate(response, 200);
-		ResponseValidate.DataValidate(response, "General Manager", "APITesting[0].Designation");
+		ResponseValidate.DataValidate(response, "General Manager", "[0].Designation");
 		
 			}
 
