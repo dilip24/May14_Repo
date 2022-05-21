@@ -1,4 +1,5 @@
 package org.testing.testSteps;
+import java.util.HashMap;
 import java.util.Properties;
 
 import io.restassured.RestAssured;
@@ -18,13 +19,35 @@ public class HTTPMethods
 	}
 
 	public Response PostRequest(String JSONRequestBody,String uriKey)
-	{
+	{		
 		Response res=
 		given()
 		.contentType(ContentType.JSON)
+		//.header(headerName, headerValue) //multiple .header needs to be used for multiple instances
 		.body(JSONRequestBody)
 		.when()
 		.post(pr.getProperty(uriKey));
+		
+		return res;
+	}
+	
+	public Response PostRequestHeader(String JSONRequestBody,String uriKey)
+	{
+		HashMap<String, String> headers = new HashMap<String, String>();
+		headers.put("Key1", "Value1");
+		headers.put("Key2", "Value2");
+		headers.put("Key3", "Value3");
+		
+		Response res=
+		given()
+		.contentType(ContentType.JSON)
+		.headers(headers)
+		//.header(headerName, headerValue) //multiple .header needs to be used for multiple instances
+		.when()
+		.post(pr.getProperty(uriKey));
+		
+		System.out.println(res.getHeader(""));
+		System.out.println(res.getHeaders());
 		
 		return res;
 	}
